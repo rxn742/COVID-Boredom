@@ -307,7 +307,8 @@ class Corona:
         plt.legend()
         plt.show()
         
-C = Corona(10000, 100000)
-C.run(20)
+if __name__ == "__main__":
+    C = Corona(10000, 100000)
+    C.run(20)
 
                    

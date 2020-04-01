@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Sudoku puzzle generator and solver
+
 Robert Noakes 2020
+
 """
 
 import numpy as np
@@ -357,3 +359,9 @@ class Generator(Solver):
                         r, c = np.random.randint(0,9), np.random.randint(0,9)
                     self.puzzle[r][c] = 0
                 return self.puzzle
+
+if __name__ == "__main__":
+    G = Generator()
+    G.make(30)
+    print(G)
+    G.solve()
